@@ -1,0 +1,9 @@
+@import './fonts.css';
+
+body {
+  font-family: 'Space Mono';
+}
+
+h1 {
+  font-weight: normal;
+}
