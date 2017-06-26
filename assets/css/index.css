@@ -1,9 +1,47 @@
 @import './fonts.css';
 
+html, body {
+  position: relative;
+  height: 100%;
+}
+
 body {
   font-family: 'Space Mono';
 }
 
 h1 {
   font-weight: normal;
+  margin: 0;
+}
+
+#home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.list-item span:hover {
+  background: black;
+  color: white;
+}
+
+.list-item::before {
+  content: '└ ';
 }
